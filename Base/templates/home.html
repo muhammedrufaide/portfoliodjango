@@ -1,0 +1,372 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammed Rufaid | Systems Programmer</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'images/favicon.jpeg' %}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">MR</h1>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h6 class="hero-subtitle"><span class="wave">👋</span> Hello, I'm</h6>
+                    <h1 class="hero-title">Muhammed <span class="highlight">Rufaid</span></h1>
+                    <div class="typewriter">
+                        <span class="type-text">Systems Programmer & Hardware Enthusiast</span>
+                    </div>
+                    <p class="hero-description">
+                        Building efficient solutions where software meets hardware with a focus on performance and elegant architecture.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="{% static 'pdf/rufaidresume.pdf' %}" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fas fa-eye"></i> View Work
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/muhammedrufaide" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammedrufaide" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/rufaid_karaparamba/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="{% static 'images/myimage.png' %}" alt="Muhammed Rufaid" class="profile-img">
+                    <div class="tech-badge cpp"><i class="fab fa-cuttlefish"></i>++</div>
+                    <div class="tech-badge python"><i class="fab fa-python"></i></div>
+                    <div class="tech-badge chip"><i class="fas fa-microchip"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Who I am and what I do</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="{% static 'images/myimage.png' %}" alt="Muhammed Rufaid" class="profile-image">
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="about-description">
+                        <p>I'm a passionate Computer Science student specializing in systems programming and hardware development. My journey in technology began when I built my first Arduino project, sparking a lifelong fascination with how software interacts with hardware at the most fundamental levels.</p>
+                        
+                        <p>What drives me is solving complex problems where performance matters most. Whether it's optimizing memory usage in embedded systems or designing efficient algorithms, I thrive on challenges that require both technical depth and creative thinking.</p>
+                        
+                        <p>When I'm not coding, you'll find me tinkering with hardware components, contributing to open-source projects, or exploring new technologies in the embedded systems space. I believe in writing clean, maintainable code that stands the test of time.</p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Cochin University of Science and Technology</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Specialization</h4>
+                                <p>Systems Architecture & Embedded Development</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Kerala, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-project-diagram"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-comments"></i> Let's Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical <span class="highlight">Skills</span></h2>
+                <p class="section-subtitle">Tools and technologies I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skills-image">
+                    <img src="{% static 'images/pro.png' %}" alt="Skills Illustration" class="skills-illustration">
+                </div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>C/C++</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%; background: #004482;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: #3776ab;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Django</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%; background: #092e20;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Embedded Systems</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%; background: #4db5ff;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%; background: #00758f;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+                <p class="section-subtitle">Featured work and contributions</p>
+            </div>
+            
+            <div class="project-category">
+                <div class="category-header">
+                    <i class="fas fa-laptop-code category-icon"></i>
+                    <h3>Software Engineering</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>C-VM: Virtual Machine</h4>
+                        <div class="project-content">
+                            <p>A custom virtual machine implementation in C that executes bytecode with stack-based architecture and register system, demonstrating core computing concepts and compiler design principles.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-book"></i> Documentation
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Portfolio Website</h4>
+                        <div class="project-content">
+                            <p>A responsive portfolio website built with Django, HTML, CSS and JavaScript showcasing my skills and projects with clean animations and modern design.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" target="_blank">
+                                <i class="fab fa-github"></i> Source Code
+                            </a>
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-category">
+                <div class="category-header">
+                    <i class="fas fa-microchip category-icon"></i>
+                    <h3>Hardware Systems</h3>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <h4>Auto Fire Extinguisher</h4>
+                        <div class="project-content">
+                            <p>IoT-based fire detection system using flame sensors and Arduino that automatically activates suppression mechanisms when threats are detected.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Documentation
+                            </a>
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-youtube"></i> Demo Video
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-solar-panel"></i>
+                        </div>
+                        <h4>Solar Oxygen Dispenser</h4>
+                        <div class="project-content">
+                            <p>Eco-friendly oxygen concentrator powered by solar energy with pressure swing adsorption technology and real-time purity monitoring.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-file-pdf"></i> Research Paper
+                            </a>
+                            <a href="#" class="btn btn-primary" target="_blank">
+                                <i class="fab fa-youtube"></i> Prototype Video
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+                <p class="section-subtitle">Let's collaborate on something extraordinary</p>
+            </div>
+
+            {% if messages %}
+                <div class="messages">
+                    {% for message in messages %}
+                        <div class="alert {% if message.tags %}{{ message.tags }}{% endif %}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+
+            <form class="contact-form" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Muhammed Rufaid</h3>
+                    <p>Systems Programmer & Hardware Developer</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/muhammedrufaide" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/muhammedrufaide" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/rufaid_karaparamba/" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Muhammed Rufaid E. All rights reserved</p>
+                <p>Built with <i class="fas fa-heart" style="color: #ff4d4d;"></i> and Django</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script>
+        // Update copyright year automatically
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
